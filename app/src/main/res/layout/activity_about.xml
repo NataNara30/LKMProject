@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imBg"
+        android:layout_width="298dp"
+        android:layout_height="400dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg2" />
+
+    <ImageView
+        android:id="@+id/imBg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="195dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/imAbout"
+        android:layout_width="241dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="480dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/about" />
+
+    <TextView
+        android:id="@+id/tvAbout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginBottom="700dp"
+        android:fontFamily="@font/kanit_bold"
+        android:text="TENTANG"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvAbout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kanit_bold"
+        android:text="KAMI"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imBg"
+        app:layout_constraintEnd_toStartOf="@+id/imAbout"
+        app:layout_constraintTop_toBottomOf="@+id/tvAbout1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvAboutApp"
+        android:layout_width="352dp"
+        android:layout_height="226dp"
+        android:fontFamily="@font/roboto_reguler"
+        android:text="Aplikasi LKM (Laporan Keluhan Masyarakat) Mobile merupakan aplikasi berbasis android yang memiliki fungsi untuk menampung berbagai aspirasi atau laporan pengaduan dari masyarakat-masyarakat setempat. Tujuan dari dibuatnya aplikasi ini yaitu untuk memudahkan masyarakat untuk melakukan laporan pengaduan tentang masalah-masalah yang terjadi di lingkungan setempat seperti kerusakan fasilitas umum, bencana kebakaran, tanah longsor, dan permasalahan atau gangguan pada lalu lintas. "
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
